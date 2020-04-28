@@ -1,0 +1,10 @@
+.full-page{
+  background: url("src/assets/background.jpg") no-repeat;
+  height: 669px;
+  background-size: cover;
+  color: white;
+}
+
+.padding {
+  padding: 40px;
+}

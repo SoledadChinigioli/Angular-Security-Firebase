@@ -1,0 +1,22 @@
+<div class="">
+  <table class="table">
+    <thead class="thead-dark">
+    <tr>
+      <th scope="col">UID</th>
+      <th scope="col">Display Name</th>
+      <th scope="col">E-mail</th>
+      <th scope="col">Delete</th>
+    </tr>
+    </thead>
+    <tbody>
+    <ng-container *ngFor="let user of users">
+      <tr>
+        <th scope="row">{{user.uid}}</th>
+        <td>{{(user.name == null) ? 'NO NAME' : user.name}}</td>
+        <td>{{user.email}}</td>
+        <td><button class="btn btn-danger">Delete</button></td>
+      </tr>
+    </ng-container>
+    </tbody>
+  </table>
+</div>

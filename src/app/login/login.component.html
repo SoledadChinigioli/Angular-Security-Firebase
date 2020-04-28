@@ -1,0 +1,35 @@
+<div class="row background">
+  <div class="col-4"></div>
+  <div class="col-4 center">
+    <div class="box">
+      <div align="center">
+        <h2>Hi!</h2>
+        <h6>Please login to have the total access!</h6>
+      </div>
+      <p>
+        <input [(ngModel)]="email" type="text" class="form-control" placeholder="E-mail" aria-label="Username" aria-describedby="basic-addon1">
+      </p>
+      <p>
+        <input [(ngModel)]="password" type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+      </p>
+      <p>
+        <button (click)="login(email, password)" type="button" class="btn btn-primary btn-block">Log In</button>
+      </p>
+      <p>
+        <button (click)="loginWithGoogle()" type="button" class="btn btn-danger btn-block">Log In with Google</button>
+      </p>
+      <div align="center">
+        <div *ngIf="error!=''" class="alert alert-danger" role="alert">
+          {{error}}
+        </div>
+        <p>
+          <a>You forgot your password?</a>
+        </p>
+        <p>
+          <a>You are new? Register</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-4"></div>
+</div>

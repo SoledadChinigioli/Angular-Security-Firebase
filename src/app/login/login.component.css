@@ -1,0 +1,17 @@
+.background{
+  background-image: url("src/assets/background.jpg");
+}
+
+.center {
+  position: absolute;
+  top: 60%;
+  left: 60%;
+  height: 30%;
+  width: 50%;
+  margin: -15% 0 0 -25%;
+}
+
+.box {
+  background-color: white;
+  padding: 10px;
+}
